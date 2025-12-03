@@ -1,0 +1,76 @@
+/* Menu classique */
+.hero__menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.hero__menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    
+}
+
+.hero__menu a:hover {
+    background: #ff6600;
+    color: #fff;
+    
+}
+/* Menu burger animé */
+/* Bouton burger avec icône svgbox */
+.navigation__button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/* Menu coulissant animé */
+.navigation__menu {
+  position: fixed;
+  top: 0;
+  right: -280px; /* caché hors écran */
+  width: 260px;
+  height: 100vh;
+  padding: 80px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: rgba(0,0,0,0.95);
+  transition: right 0.35s ease-in-out;
+  z-index: 1000;
+}
+.navigation__menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 6px;
+}
+.navigation__menu a:hover {
+  background: #ff6600;
+}
+
+/* Toggle */
+.navigation__toggle { display: none; }
+.navigation__toggle:checked ~ .navigation__menu { right: 0; }
+
+/* Mobile seulement */
+@media (max-width: 900px) {
+  .navigation { display: block; }
+  .hero__menu { display: none; } /* cache le menu desktop */
+}

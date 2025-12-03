@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Vaccari</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HERO///////////////////////////////////////////////////////////////////////// -->
+    <div class="hero" id="accueil">
+        <div class="hero__barresup">
+            <img class="hero__logo" src="images/f8ee3bdb4999cd30c1d8931585db1a7b.png" alt="logo" width="60">
+
+           
+
+    <!-- MENU BURGER ANIMÉ -->
+<!-- MENU BURGER (mobile avec icône svgbox) -->
+<div class="navigation">
+  <input type="checkbox" id="chk-burger" class="navigation__toggle">
+  <label class="navigation__button" for="chk-burger">
+    <!-- Icône svgbox -->
+    <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=fff" width="32" height="32" alt="Menu">
+  </label>
+
+  <nav class="navigation__menu">
+    <a href="#accueil">Accueil</a>
+    <a href="#formulaire">Inscription</a>
+    <a href="#deux">Nouveauté</a>
+    <a href="#trois">Articles</a>
+    <a href="#quatre">Galerie</a>
+    <a href="#cinq">Cinq</a>
+    <a href="#six">Six</a>
+    <a href="#Adresse">Adresse</a>
+  </nav>
+</div>
+
+
+        </div>
+
+        <header class="centre__hero">
+            <h1 class="hero__titre">Dark Souls 3</h1>
+            <h2>Chosen cinder</h2>
+            <p>Dans Dark Souls 3, vous incarnez un "Mort-vivant sans feu" appelé à ramener les "Seigneurs des Cendres" sur leurs trônes pour raviver une flamme mourante dans le royaume de Lothric. Ces seigneurs ont refusé leur rôle, brisant le cycle de l'Âge du Feu, et leurs âmes sont maintenant dispersées. Le joueur doit les retrouver et les ramener au Sanctuaire de Lige-Feu, avec l'aide d'une gardienne, pour remplir cette mission. </p>
+            <p>Dépot Github: <a href=" https://arthur-vaccari60.github.io/TP2_1W1/">Dépot Github</a></p>
+            <a class="hero__bouton" href="#formulaire">Inscription</a>
+        </header>
+    </div>
+
+    <!-- SECTIONS -->
+    <section id="un" class="centre"><h1>Inscription</h1></section>
+    <section id="deux" class="centre"><h1>Nouveauté</h1></section>
+    <section id="trois" class="centre"><h1>Articles</h1></section>
+    <section id="quatre" class="centre"><h1>Quatre</h1></section>
+    <section id="cinq" class="centre"><h1>Cinq</h1></section>
+    <section id="six" class="centre"><h1>Six</h1></section>
+
+    <!-- FORMULAIRE -->
+    <section id="formulaire" class="centre">
+        <h2>Formulaire d'inscription</h2>
+        <form class="formulaire">
+            <fieldset>
+                <label class="formulaire__label" for="txt-nom">Nom:</label>
+                <input class="formulaire__text" id="txt-nom" type="text" placeholder="Entrer votre nom">
+            </fieldset>
+
+            <fieldset>
+                <label class="formulaire__label" for="txt-prenom">Prénom:</label>
+                <input class="formulaire__text" id="txt-prenom" type="text" placeholder="Entrer votre prénom">
+            </fieldset>
+
+            <fieldset>
+                <label class="formulaire__label" for="txt-email">Courriel:</label>
+                <input class="formulaire__text" id="txt-email" type="email" placeholder="Entrer votre courriel">
+            </fieldset>
+
+            <fieldset>
+                <legend>Abonnement</legend>
+                <label>Pro <input type="radio" name="rad-abonnement"></label>
+                <label>Intermédiaire <input type="radio" name="rad-abonnement"></label>
+                <label>Débutant <input type="radio" name="rad-abonnement"></label>
+            </fieldset>
+
+            <input type="submit" value="Valider">
+        </form>
+    </section>
+
+    <!-- ADRESSE -->
+    <section id="Adresse" class="centre">
+        <h2>Adresse</h2>
+        <p>Montréal, QC, Canada</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Arthur Vaccari. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
