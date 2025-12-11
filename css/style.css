@@ -100,14 +100,6 @@ section {
 
 #quatre { 
    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url("../images/Darksouls3-feature-1.webp") center/cover no-repeat;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding: 40px;
 }
 #cinq {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
@@ -156,7 +148,92 @@ footer {
             padding: 30px;
             
 }
-.hero__logo{
-    margin: 0 auto 0 0;
-            
+.hero__logo {
+  width: 40px;  
+  height: auto;
+}
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-icons a img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+  
+}
+/*   PIED DE PAGE                 */
+
+.pied {
+  background-color: #ff6600;
+  color: #000;
+  padding: 30px 0;
+}
+
+.pied__ligne1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pied__bloc {
+  flex: 1 1 230px;
+}
+
+.pied__bloc h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.pied__bloc ul {
+  list-style: none;
+}
+
+.pied__bloc li {
+  margin-bottom: 6px;
+}
+
+.pied__ligne2 {
+  display: flex;
+ 
+  padding-top: 16px;
+  margin-top: 16px;
+  
+  font-size: 0.9rem;
+}
+
+.pied__ligne3 {
+  
+  padding-top: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start; 
+  gap: 10px; 
+}
+
+
+.pied__ligne3 .icones i {
+  font-size: 1.4rem;
+  margin: 0 8px;
+}
+@media (max-width: 900px) {
+  .principal__contenu {
+    flex-direction: column;
+  }
+  .images {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .menu {
+    gap: 10px;
+  }
+  .entete__haut {
+    justify-content: center;
+  }
 }
